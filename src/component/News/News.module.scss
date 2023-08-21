@@ -1,0 +1,25 @@
+@import '../../assets/styles/variable/index.scss';
+
+.cardNews {
+  &_img:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+  }
+  &_Date {
+    color: $colorPrimary;
+    font-weight: $fontWei-400;
+  }
+  &_Title {
+    text-decoration: none;
+    color: $colorPrimary;
+    font-weight: $fontWei-600;
+    font-size: $fontSize-18;
+  }
+  &_Author {
+    color: $colorPrimary;
+    font-weight: $fontWei-400;
+    letter-spacing: $letterS-1;
+    line-height: 1;
+    margin-top: $marginT-10;
+  }
+}

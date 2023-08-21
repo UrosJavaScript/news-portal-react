@@ -1,0 +1,85 @@
+@import '../../../assets/styles/variable/index.scss';
+
+.wrapperHeaderNewsDetails {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  z-index: 100;
+
+  &__imgBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../../assets/images/News/news-details.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+    width: 100%;
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 0,
+      100% 60%,
+      67% 86%,
+      30% 96%,
+      0 100%,
+      0 0
+    );
+  }
+
+  &__content {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+  &__bgNav {
+    background-color: $bgHeader;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    transition: 1s ease-in-out;
+    box-shadow: $boxShadowPrimaryHeader;
+  }
+  &__logoImg {
+    width: auto;
+    height: 45px;
+  }
+
+  &__toggle {
+    color: transparent;
+    background-color: $primary;
+  }
+
+  &__navItem {
+    > a {
+      color: $text;
+      letter-spacing: $letterS-4;
+      font-size: $fontSize-14;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    & a:hover {
+      color: $textsecondary;
+      transition: 1.5s ease;
+    }
+    & a:focus {
+      color: $textsecondary;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 70vh;
+
+    &__imgBg {
+      min-height: $minHeight-300;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1300px) {
+    height: 80vh;
+    &__imgBg {
+      min-height: $minHeight-300;
+    }
+  }
+}

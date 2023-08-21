@@ -1,0 +1,76 @@
+@import '../../../assets//styles/variable/index.scss';
+
+.ourFocusWrapper {
+  width: 100%;
+  margin-top: $marginT-80;
+  margin-bottom: $marginB-80;
+
+  &_headingTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: $marginT-20;
+    & h2 {
+      font-weight: $fontWei-900;
+      letter-spacing: $letterS-4;
+      color: $colorPrimary;
+    }
+  }
+
+  &_bottomSection {
+    margin-top: $marginT-80;
+    margin-bottom: $marginB-80;
+    width: 100%;
+  }
+
+  &_containerBottomS {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &_wrapperImgRelative {
+    position: relative;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 10s;
+    -moz-animation: fadeIn 10s;
+  }
+  &_wrapperImgAbsolute {
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    right: 0;
+    width: 280px;
+    height: 200px;
+    border-radius: $borderR-20;
+    opacity: 0.8;
+  }
+
+  &_flexCardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_cardTop {
+    color: $colorPrimary;
+    font-weight: bold;
+    letter-spacing: $letterS-1;
+  }
+
+  @media screen and (max-width: 1023px) {
+    &_containerBottomS {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_flexCardWrapper {
+      margin-top: $marginT-50;
+    }
+    &_wrapperImgAbsolute {
+      left: 0;
+    }
+  }
+}

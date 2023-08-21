@@ -1,0 +1,39 @@
+@keyframes animVirtual {
+  0% {
+    transform: scale(1.1) translateX(0) translateY(0) rotate(60deg);
+  }
+  50% {
+    transform: scale(1) translateX(150px) translateY(20px) rotate(40deg);
+  }
+  100% {
+    transform: scale(1) translateX(0) translateY(50px) rotateZ(90deg);
+  }
+}
+
+.absoluteAnim {
+  position: absolute;
+  top: 34%;
+  left: 17%;
+  animation-name: animVirtual;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+  > img {
+    height: 180px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    left: 10%;
+
+    > img {
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    top: 12%;
+    left: 0;
+    > img {
+      height: 60px;
+    }
+  }
+}

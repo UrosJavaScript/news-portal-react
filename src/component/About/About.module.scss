@@ -1,0 +1,55 @@
+@import '../../assets/styles/variable/index.scss';
+
+.containerAbout {
+  width: 100%;
+  background-color: $containerAbout;
+  margin-bottom: $marginB-80;
+  margin-top: $marginT-40;
+
+  &_wrapperFlexAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &_section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: $padding-40;
+  }
+
+  & h3 {
+    font-size: $fontSize-40;
+    text-decoration: none;
+    color: $colorPrimary;
+    font-weight: $fontWei-900;
+    letter-spacing: $letterS-4;
+    margin-bottom: $marginB-40;
+
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  & h3:before,
+  & h3:after {
+    position: absolute;
+    bottom: 0%;
+    overflow: hidden;
+    width: 100%;
+    height: 1px;
+    content: '\a0';
+    background-color: $bgAbsoluteHr;
+  }
+  & p {
+    font-size: $fontSize-16;
+    text-decoration: none;
+    color: $colorPrimary;
+    font-weight: $fontWei-400;
+    letter-spacing: $letterS-1_2;
+  }
+}

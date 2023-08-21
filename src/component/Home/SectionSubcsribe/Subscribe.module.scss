@@ -1,0 +1,48 @@
+@import '../../../assets/styles/variable/index.scss';
+
+.wraperSubscribesEmail {
+  width: 100%;
+  background: $bgSubscribe;
+  background: $bgSubscribedLinear;
+  color: $text;
+  padding: $padding-50;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  &_sectionFlex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_formContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &_formWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  &_formBtn {
+    margin-left: $marginL-50;
+  }
+
+  @media screen and (max-width: 768px) {
+    &_sectionFlex {
+      flex-direction: column;
+    }
+    &_formWrapper {
+      flex-direction: column;
+      margin-top: $marginT-50;
+    }
+    &_formBtn {
+      margin: 0;
+    }
+  }
+}

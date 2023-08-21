@@ -1,0 +1,30 @@
+@import '../../../../assets/styles/variable/index.scss';
+
+.wrapCardInside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+
+  > :nth-last-child(1) {
+    background-color: $bgCardInsideSlider;
+  }
+
+  &_widthCard {
+    max-width: $maxWidth-400;
+  }
+
+  &_iconTextCard {
+    display: flex;
+  }
+
+  &_textCardBottom {
+    margin: 0 22px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    &_widthCard {
+      max-width: $maxWidth-300;
+    }
+  }
+}

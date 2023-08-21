@@ -1,0 +1,107 @@
+/* Global Style */
+
+// font
+$roboto-font: 'Roboto';
+
+// colors
+$bodyBackground: #ebe1e1;
+$colorPrimary: #141441;
+$colorBlack: #000;
+
+$bgHeader: #1a213e;
+$bgHeaderOpacity: #1a1a25e1;
+
+$text: #ffffff;
+$textsecondary: #16d2f7;
+$primary: #c6cfd1;
+
+$containerAbout: #e9d7d7a2;
+$bgAbsoluteHr: #5573a0;
+$bgFormWrapper: #16334ced;
+$submitBtnContact: #423838a2;
+$bgAbsoluteHeader: #19191f57;
+$bgModal: #292f3df5;
+$bgSliderPrev: #161566;
+$bgCardInsideSlider: #878ca3cb;
+
+$colorPaginLink: #2b2eff;
+
+$bgSubscribe: #0c790c;
+$bgSubscribedLinear: linear-gradient(
+  49deg,
+  rgba(12, 121, 12, 1) 55%,
+  rgba(191, 219, 148, 1) 94%
+);
+
+// box-shadow
+$boxShadowPrimaryHeader: rgba(147, 168, 212, 0.842) 0px 30px 60px -12px inset,
+  rgba(65, 79, 143, 0.644) 0px 18px 36px -18px inset;
+
+// margin-bottom
+$marginB-20: 20px;
+$marginB-40: 40px;
+$marginB-50: 50px;
+$marginB-80: 80px;
+// margin-top
+$marginT-10: 10px;
+$marginT-20: 20px;
+$marginT-30: 30px;
+$marginT-40: 40px;
+$marginT-50: 50px;
+$marginT-80: 80px;
+// margin-left
+$marginL-50: 50px;
+// margin-right
+$marginR-10: 10px;
+
+// padding
+$padding-10: 10px;
+$padding-20: 20px;
+$padding-40: 40px;
+$padding-50: 50px;
+$padding-80: 80px;
+
+// font-weight
+$fontWei-300: 300;
+$fontWei-400: 400;
+$fontWei-500: 500;
+$fontWei-600: 600;
+$fontWei-700: 700;
+$fontWei-900: 900;
+
+// font-size
+$fontSize-14: 14px;
+$fontSize-16: 16px;
+$fontSize-18: 18px;
+$fontSize-25: 25px;
+$fontSize-30: 30px;
+$fontSize-40: 40px;
+$fontSize-60: 60px;
+$fontSize-100: 100px;
+
+// letter-spacing
+$letterS-1: 1px;
+$letterS-1_2: 1.2px;
+$letterS-2: 2px;
+$letterS-4: 4px;
+$letterS-5: 5px;
+
+// border-radius
+$borderR-10: 10px;
+$borderR-20: 20px;
+$borderR-50: 50%;
+
+// min-max height
+$minHeight-150: 150px;
+$minHeight-300: 300px;
+$minHeight-500: 500px;
+$maxWidth-250: 250px;
+$maxWidth-300: 300px;
+$maxWidth-400: 400px;
+$maxWidth-500: 500px;
+$maxWidth-700: 700px;
+$maxWidth-800: 800px;
+
+/* Header */
+$wrapperHeader-height: 650px;
+// end

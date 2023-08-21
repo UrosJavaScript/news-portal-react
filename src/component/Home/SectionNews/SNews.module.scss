@@ -1,0 +1,42 @@
+@import '../../../assets/styles/variable/index.scss';
+
+.sectionNewsWrapper {
+  width: 100%;
+  margin-top: $marginT-80;
+  margin-bottom: $marginB-80;
+
+  &_headingTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $marginB-50;
+
+    & h2 {
+      font-weight: $fontWei-900;
+      letter-spacing: $letterS-4;
+      color: $colorPrimary;
+    }
+  }
+
+  &_sliderSlick {
+    width: 100%;
+  }
+
+  &_cardDate {
+    color: $colorPrimary;
+    font-weight: $fontWei-400;
+  }
+  &_cardTitle {
+    text-decoration: none;
+    color: $colorPrimary;
+    font-weight: $fontWei-600;
+    font-size: $fontSize-18;
+  }
+  &_cardAuthor {
+    color: $colorPrimary;
+    font-weight: $fontWei-400;
+    letter-spacing: $letterS-1;
+    line-height: 1;
+    margin-top: $marginT-10;
+  }
+}

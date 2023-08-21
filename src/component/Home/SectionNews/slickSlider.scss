@@ -1,0 +1,23 @@
+@import '../../../assets/styles/variable/index.scss';
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-prev {
+  background-color: $bgSliderPrev !important;
+  z-index: 99;
+  position: absolute;
+  top: -22px;
+  left: 0;
+}
+.slick-next {
+  left: 55px;
+  z-index: 99;
+  position: absolute;
+  top: -22px;
+  background-color: $bgSliderPrev !important;
+}
+
+.slick-slide *:focus {
+  outline: none;
+}

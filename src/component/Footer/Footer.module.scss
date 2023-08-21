@@ -1,0 +1,85 @@
+@import '../../assets//styles/variable/index.scss';
+
+.wrapperFooter {
+  display: flex;
+  width: 100%;
+
+  &_h1 {
+    font-size: $fontSize-40;
+    text-decoration: none;
+    color: $colorPrimary;
+    font-weight: $fontWei-900;
+  }
+  &_p {
+    font-size: $fontSize-18;
+    color: $colorPrimary;
+  }
+  &_copyright {
+    margin-bottom: 0;
+    color: $colorPrimary;
+    & a {
+      text-decoration: none;
+      color: $colorPrimary;
+      font-weight: $fontWei-900;
+    }
+  }
+
+  &_columnTwoTitle {
+    margin-bottom: $marginB-20;
+    font-size: $fontSize-16;
+    color: $colorPrimary;
+    font-weight: $fontWei-700;
+  }
+  &_columnTwoLink > a {
+    color: $colorPrimary;
+    font-weight: $fontWei-600;
+    text-decoration: none;
+    opacity: 0.7;
+    letter-spacing: $letterS-1;
+    line-height: 1;
+  }
+  &_columnTwoLink > a:hover {
+    color: $colorPrimary;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+    font-weight: $fontWei-900;
+  }
+
+  &_columnThreeh1 {
+    margin-bottom: $marginB-20;
+    font-size: $fontSize-16;
+    color: $colorPrimary;
+    font-weight: $fontWei-700;
+  }
+  &_columnTwoThreeAddress {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    color: $colorPrimary;
+    font-weight: $fontWei-600;
+    text-decoration: none;
+    opacity: 0.7;
+    letter-spacing: $letterS-1;
+    line-height: 1;
+  }
+
+  &_columnFourh1 {
+    margin-bottom: $marginB-20;
+    font-size: $fontSize-16;
+    color: $colorPrimary;
+    font-weight: $fontWei-700;
+  }
+  &_columnFourAddress {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    color: $colorPrimary;
+    font-weight: $fontWei-600;
+    text-decoration: none;
+    opacity: 0.7;
+    letter-spacing: $letterS-1;
+    line-height: 1;
+  }
+}
